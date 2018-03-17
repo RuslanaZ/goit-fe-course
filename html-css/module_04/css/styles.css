@@ -39,7 +39,6 @@ body {
 .menu li {
     display: inline-block;
     margin-right: 30px;
-    color: #0f0101;
 }
 
 .menu a {
@@ -47,6 +46,7 @@ body {
     padding: 5px;
     text-transform: uppercase;
     text-decoration: none;
+    color: #0f0101;
 }
 
 .menu :last-child {

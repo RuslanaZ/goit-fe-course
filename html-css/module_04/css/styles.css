@@ -39,6 +39,7 @@ body {
 .menu li {
     display: inline-block;
     margin-right: 30px;
+    color: #0f0101;
 }
 
 .menu a {

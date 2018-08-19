@@ -89,17 +89,17 @@ body {
     margin-bottom: 30px;
 }
 
-.name_card:hover {
+.card:hover .name_card {
     background-color: #1abc9c;
 }
 
-.price_card:hover {
+.card:hover .price_card {
     background-color: #7fd9c7;
 }
 
 .card:nth-child(4n) {
     margin-right: 0px;
-}
+   }
 
 .card:nth-child(n+5) {
     margin-bottom: 0px;

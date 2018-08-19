@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+}
+
+
+.wrapper {
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.menu_sorting, .menu_categories {
+  width: 100%;
+  position: relative;
+  min-height: 50px;
+  border: 1px solid #bbbbbb;
+  border-bottom: none;
+  text-transform: uppercase;
+  color: #bbbbbb;
+  padding-top: 15px;
+} 
+
+.submenu_name {
+  width: 100%;
+  min-height: 50px;
+  border-bottom: 1px solid #bbbbbb;
+  text-transform: uppercase;
+  color: #bbbbbb;
+  padding-top: 15px;
+}
+
+.submenu_name:first-child {
+  border-top: 1px solid #bbbbbb;
+}
+
+.submenu_name:last-child {
+  border-bottom: none;
+}
+
+.search {
+  position: relative;
+  display: inline-block;
+  border: none;
+  font-size: 18px;
+  color: #bbbbbb;
+  height: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  border: 1px solid #bbbbbb;    
+}
+
+
+.name_filters {
+  margin-bottom: 40px;
+}
+
+
+.menu {
+  list-style: none;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.submenu {
+  display: none;
+  list-style: none;
+}
+
+.menu_sorting, .menu_categories {
+  position: relative;
+}
+
+.menu_sorting > a, .menu_categories > a,
+.submenu_name > a {
+  display: inline-block;
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+.button {
+  background: transparent;
+  font-size: 18px;
+  border: none;
+}
+
+.button_remove {
+color: #bbbbbb;
+border-bottom: 1px solid;
+}
+
+.menu_categories_button, .menu_sorting_button {
+  background-image: url(../icons/outline-keyboard_arrow_down-24px.svg);
+  position: absolute;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  right: 0;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  border: none;
+}
+
+.search_submit::before {
+ content:'';
+ background-image: url(../icons/symbol-defs#icon-outline-keyboard_arrow_down-24px.svg);
+ position: absolute;
+ display: inline-block;
+ width: 32px;
+ height: 32px;
+ margin-right: 10px;
+ background-repeat: no-repeat;
+ background-position: center; 
+ border: none;
+ z-index: 2;
+ right: 0;
+ top: 10px;
+}
+
+.form {
+  margin-bottom: 30px;
+}
+
+.search_submit {
+  position: relative;
+  top: 0;
+}
+
+.menu_categories:hover> .submenu{
+  display: block;
+}
+
+.menu_sorting:hover> .submenu {
+  display: block;
+
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    flex-direction: row;
+  }
+  .menu-item { 
+    width: 33.3%;
+    }
+  }
+     
